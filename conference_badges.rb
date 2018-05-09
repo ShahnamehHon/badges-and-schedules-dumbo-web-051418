@@ -20,3 +20,8 @@ def batch_badge_creator(guests)
   end
   return welcome_list
 end
+
+def printer(guests)
+  badges_and_room_assignments.each_line do |line|
+    puts line.chomp
+ end
