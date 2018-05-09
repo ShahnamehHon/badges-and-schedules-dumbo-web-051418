@@ -9,3 +9,14 @@ def batch_badge_creator(guests)
  end
  return introduction
  end
+ 
+ def assign_rooms(guests)
+  welcome_list = []
+  counter = 1
+
+  for name in guests
+    welcome_list << ("Hello, #{name}! You'll be assigned to room #{counter}!")
+    counter += 1
+  end
+  return welcome_list
+end
