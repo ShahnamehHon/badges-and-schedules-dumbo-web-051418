@@ -5,4 +5,4 @@ end
 def batch_badge_creator(guests)
   introduction = []
    for name in guests
-   introduction
+   introduction << "Hello"
